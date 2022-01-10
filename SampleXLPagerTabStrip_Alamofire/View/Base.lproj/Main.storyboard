@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="df0-e7-clU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--登録-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleXLPagerTabStrip_Alamofire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3PY-aE-8FY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="c3s-V8-SlA"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vch-ee-7HQ"/>
+                            </scrollView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dBY-us-HOp" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="48" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B3d-U6-Udr"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gJf-Sm-NU3">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3PY-aE-8FY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FjF-ec-6b7"/>
+                            <constraint firstItem="dBY-us-HOp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JI2-O0-fcz"/>
+                            <constraint firstItem="3PY-aE-8FY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Lzp-Gn-Deq"/>
+                            <constraint firstItem="3PY-aE-8FY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MM8-RG-9fN"/>
+                            <constraint firstItem="dBY-us-HOp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="YIo-eQ-3vc"/>
+                            <constraint firstItem="3PY-aE-8FY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sYh-3b-su8"/>
+                            <constraint firstItem="dBY-us-HOp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sk9-GQ-2dQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="登録" image="square.and.pencil" catalog="system" id="tYJ-gf-Zs6"/>
+                    <connections>
+                        <outlet property="buttonBarView" destination="dBY-us-HOp" id="W4M-3W-2Oo"/>
+                        <outlet property="containerView" destination="3PY-aE-8FY" id="WrA-Bo-xAY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="97.767857142857139"/>
+        </scene>
+        <!--QittaList-->
+        <scene sceneID="Nmd-VN-Euh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QittaList" id="arm-On-ZgL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Mwa-9c-mCD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8D-dh-rDP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="515"/>
+        </scene>
+        <!--Regist-->
+        <scene sceneID="6k8-4I-M7z">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="regist" storyboardName="Regist" id="cZ7-ua-Rhe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tEI-05-811" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616" y="-83"/>
+        </scene>
+        <!--PersonList-->
+        <scene sceneID="0gQ-Y6-cUh">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="personList" storyboardName="PersonList" id="2zy-l8-BPv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Znq-2D-NTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632" y="43"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ARn-V4-Mbk">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="df0-e7-clU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hk0-8k-MGF">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemTealColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="7XE-uh-EbD"/>
+                        <segue destination="arm-On-ZgL" kind="relationship" relationship="viewControllers" id="zlp-Jl-ydd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkE-gm-5qd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

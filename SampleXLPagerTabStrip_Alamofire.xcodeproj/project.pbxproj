@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		36CAF26D5FFB698A14024178 /* Pods_SampleXLPagerTabStrip_Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8B747DF8DC2A0F957BFA85 /* Pods_SampleXLPagerTabStrip_Alamofire.framework */; };
+		BA230404278C301300361FA5 /* Regist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA230403278C301300361FA5 /* Regist.storyboard */; };
+		BA230406278C306200361FA5 /* PersonList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA230405278C306200361FA5 /* PersonList.storyboard */; };
+		BA230408278C307400361FA5 /* QittaList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA230407278C307400361FA5 /* QittaList.storyboard */; };
+		BA23040A278C31CD00361FA5 /* RegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA230409278C31CD00361FA5 /* RegistViewController.swift */; };
+		BA23040C278C31DB00361FA5 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA23040B278C31DB00361FA5 /* PersonViewController.swift */; };
+		BA23040E278C31FC00361FA5 /* QittaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA23040D278C31FC00361FA5 /* QittaViewController.swift */; };
 		BA86DA0B278C29F600610768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86DA0A278C29F600610768 /* AppDelegate.swift */; };
 		BA86DA0D278C29F600610768 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86DA0C278C29F600610768 /* SceneDelegate.swift */; };
 		BA86DA0F278C29F600610768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86DA0E278C29F600610768 /* ViewController.swift */; };
@@ -20,6 +26,12 @@
 		73DFFEE65E1B19235C31CA06 /* Pods-SampleXLPagerTabStrip_Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleXLPagerTabStrip_Alamofire.debug.xcconfig"; path = "Target Support Files/Pods-SampleXLPagerTabStrip_Alamofire/Pods-SampleXLPagerTabStrip_Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
 		AE8B747DF8DC2A0F957BFA85 /* Pods_SampleXLPagerTabStrip_Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleXLPagerTabStrip_Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B233F4BD04C92774018B1C /* Pods-SampleXLPagerTabStrip_Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleXLPagerTabStrip_Alamofire.release.xcconfig"; path = "Target Support Files/Pods-SampleXLPagerTabStrip_Alamofire/Pods-SampleXLPagerTabStrip_Alamofire.release.xcconfig"; sourceTree = "<group>"; };
+		BA230403278C301300361FA5 /* Regist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Regist.storyboard; sourceTree = "<group>"; };
+		BA230405278C306200361FA5 /* PersonList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonList.storyboard; sourceTree = "<group>"; };
+		BA230407278C307400361FA5 /* QittaList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QittaList.storyboard; sourceTree = "<group>"; };
+		BA230409278C31CD00361FA5 /* RegistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistViewController.swift; sourceTree = "<group>"; };
+		BA23040B278C31DB00361FA5 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		BA23040D278C31FC00361FA5 /* QittaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QittaViewController.swift; sourceTree = "<group>"; };
 		BA86DA07278C29F600610768 /* SampleXLPagerTabStrip_Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleXLPagerTabStrip_Alamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA86DA0A278C29F600610768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA86DA0C278C29F600610768 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +60,36 @@
 				73DFFEE65E1B19235C31CA06 /* Pods-SampleXLPagerTabStrip_Alamofire.debug.xcconfig */,
 				B5B233F4BD04C92774018B1C /* Pods-SampleXLPagerTabStrip_Alamofire.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA230400278C2BA300361FA5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA86DA0E278C29F600610768 /* ViewController.swift */,
+				BA230409278C31CD00361FA5 /* RegistViewController.swift */,
+				BA23040B278C31DB00361FA5 /* PersonViewController.swift */,
+				BA23040D278C31FC00361FA5 /* QittaViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA230401278C2BB200361FA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA86DA10278C29F600610768 /* Main.storyboard */,
+				BA230403278C301300361FA5 /* Regist.storyboard */,
+				BA230405278C306200361FA5 /* PersonList.storyboard */,
+				BA230407278C307400361FA5 /* QittaList.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA230402278C2BB900361FA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BA86D9FE278C29F600610768 = {
@@ -73,10 +113,11 @@
 		BA86DA09278C29F600610768 /* SampleXLPagerTabStrip_Alamofire */ = {
 			isa = PBXGroup;
 			children = (
+				BA230402278C2BB900361FA5 /* Model */,
+				BA230401278C2BB200361FA5 /* View */,
+				BA230400278C2BA300361FA5 /* Controller */,
 				BA86DA0A278C29F600610768 /* AppDelegate.swift */,
 				BA86DA0C278C29F600610768 /* SceneDelegate.swift */,
-				BA86DA0E278C29F600610768 /* ViewController.swift */,
-				BA86DA10278C29F600610768 /* Main.storyboard */,
 				BA86DA13278C29F600610768 /* Assets.xcassets */,
 				BA86DA15278C29F600610768 /* LaunchScreen.storyboard */,
 				BA86DA18278C29F600610768 /* Info.plist */,
@@ -152,8 +193,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA230406278C306200361FA5 /* PersonList.storyboard in Resources */,
 				BA86DA17278C29F600610768 /* LaunchScreen.storyboard in Resources */,
 				BA86DA14278C29F600610768 /* Assets.xcassets in Resources */,
+				BA230404278C301300361FA5 /* Regist.storyboard in Resources */,
+				BA230408278C307400361FA5 /* QittaList.storyboard in Resources */,
 				BA86DA12278C29F600610768 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,8 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA23040C278C31DB00361FA5 /* PersonViewController.swift in Sources */,
 				BA86DA0F278C29F600610768 /* ViewController.swift in Sources */,
 				BA86DA0B278C29F600610768 /* AppDelegate.swift in Sources */,
+				BA23040A278C31CD00361FA5 /* RegistViewController.swift in Sources */,
+				BA23040E278C31FC00361FA5 /* QittaViewController.swift in Sources */,
 				BA86DA0D278C29F600610768 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
