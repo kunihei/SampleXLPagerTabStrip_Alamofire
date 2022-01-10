@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36CAF26D5FFB698A14024178 /* Pods_SampleXLPagerTabStrip_Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8B747DF8DC2A0F957BFA85 /* Pods_SampleXLPagerTabStrip_Alamofire.framework */; };
 		BA86DA0B278C29F600610768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86DA0A278C29F600610768 /* AppDelegate.swift */; };
 		BA86DA0D278C29F600610768 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86DA0C278C29F600610768 /* SceneDelegate.swift */; };
 		BA86DA0F278C29F600610768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86DA0E278C29F600610768 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73DFFEE65E1B19235C31CA06 /* Pods-SampleXLPagerTabStrip_Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleXLPagerTabStrip_Alamofire.debug.xcconfig"; path = "Target Support Files/Pods-SampleXLPagerTabStrip_Alamofire/Pods-SampleXLPagerTabStrip_Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
+		AE8B747DF8DC2A0F957BFA85 /* Pods_SampleXLPagerTabStrip_Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleXLPagerTabStrip_Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B233F4BD04C92774018B1C /* Pods-SampleXLPagerTabStrip_Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleXLPagerTabStrip_Alamofire.release.xcconfig"; path = "Target Support Files/Pods-SampleXLPagerTabStrip_Alamofire/Pods-SampleXLPagerTabStrip_Alamofire.release.xcconfig"; sourceTree = "<group>"; };
 		BA86DA07278C29F600610768 /* SampleXLPagerTabStrip_Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleXLPagerTabStrip_Alamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA86DA0A278C29F600610768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA86DA0C278C29F600610768 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CAF26D5FFB698A14024178 /* Pods_SampleXLPagerTabStrip_Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4722F482D99B6EE43CF1C5AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73DFFEE65E1B19235C31CA06 /* Pods-SampleXLPagerTabStrip_Alamofire.debug.xcconfig */,
+				B5B233F4BD04C92774018B1C /* Pods-SampleXLPagerTabStrip_Alamofire.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BA86D9FE278C29F600610768 = {
 			isa = PBXGroup;
 			children = (
 				BA86DA09278C29F600610768 /* SampleXLPagerTabStrip_Alamofire */,
 				BA86DA08278C29F600610768 /* Products */,
+				4722F482D99B6EE43CF1C5AE /* Pods */,
+				D597F281019F97205214B081 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = SampleXLPagerTabStrip_Alamofire;
 			sourceTree = "<group>";
 		};
+		D597F281019F97205214B081 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE8B747DF8DC2A0F957BFA85 /* Pods_SampleXLPagerTabStrip_Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA86DA1B278C29F600610768 /* Build configuration list for PBXNativeTarget "SampleXLPagerTabStrip_Alamofire" */;
 			buildPhases = (
+				B9B90A6C112424139B82073B /* [CP] Check Pods Manifest.lock */,
 				BA86DA03278C29F600610768 /* Sources */,
 				BA86DA04278C29F600610768 /* Frameworks */,
 				BA86DA05278C29F600610768 /* Resources */,
+				8C29474AD2FC6B5C56831DB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C29474AD2FC6B5C56831DB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleXLPagerTabStrip_Alamofire/Pods-SampleXLPagerTabStrip_Alamofire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleXLPagerTabStrip_Alamofire/Pods-SampleXLPagerTabStrip_Alamofire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleXLPagerTabStrip_Alamofire/Pods-SampleXLPagerTabStrip_Alamofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B90A6C112424139B82073B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleXLPagerTabStrip_Alamofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA86DA03278C29F600610768 /* Sources */ = {
@@ -217,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +353,7 @@
 		};
 		BA86DA1C278C29F600610768 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DFFEE65E1B19235C31CA06 /* Pods-SampleXLPagerTabStrip_Alamofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,12 +376,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BA86DA1D278C29F600610768 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B233F4BD04C92774018B1C /* Pods-SampleXLPagerTabStrip_Alamofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,7 +405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
