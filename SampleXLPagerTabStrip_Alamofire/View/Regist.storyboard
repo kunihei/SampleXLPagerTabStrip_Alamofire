@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,46 +21,58 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前を入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g1E-WR-iVf">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前を入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g1E-WR-iVf">
                                 <rect key="frame" x="20" y="239" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="年齢を入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FO2-5b-5Ax">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="年齢を入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FO2-5b-5Ax">
                                 <rect key="frame" x="20" y="382" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szc-YJ-a59">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szc-YJ-a59">
                                 <rect key="frame" x="119" y="511" width="177" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81156303870000002" green="1" blue="0.81460864330000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="DC6-37-RQY"/>
+                                    <constraint firstAttribute="width" constant="177" id="WGu-bI-Gqc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="登録">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="registButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qLk-Uf-wgZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7mo-cO-9X3" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="7aY-ne-cr4"/>
+                            <constraint firstItem="FO2-5b-5Ax" firstAttribute="top" secondItem="g1E-WR-iVf" secondAttribute="bottom" constant="109" id="EcQ-qA-JJu"/>
                             <constraint firstItem="7mo-cO-9X3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="F6y-Sd-FoJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="g1E-WR-iVf" secondAttribute="trailing" constant="20" id="NbP-cD-DZe"/>
+                            <constraint firstItem="szc-YJ-a59" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="119" id="OLQ-G3-Udf"/>
                             <constraint firstItem="7mo-cO-9X3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="Vd6-k6-PJJ"/>
+                            <constraint firstItem="FO2-5b-5Ax" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="WPA-JK-K5H"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="szc-YJ-a59" secondAttribute="trailing" constant="118" id="ZIQ-zy-Kv1"/>
+                            <constraint firstItem="g1E-WR-iVf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="cuL-Kw-SGx"/>
+                            <constraint firstItem="szc-YJ-a59" firstAttribute="top" secondItem="FO2-5b-5Ax" secondAttribute="bottom" constant="95" id="t2S-sy-vqD"/>
+                            <constraint firstItem="g1E-WR-iVf" firstAttribute="top" secondItem="7mo-cO-9X3" secondAttribute="bottom" constant="97" id="w5a-VK-Ssl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FO2-5b-5Ax" secondAttribute="trailing" constant="20" id="zEn-DS-wfs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="FO2-5b-5Ax" id="Vtt-Ai-KPT"/>
+                        <outlet property="nameTextField" destination="g1E-WR-iVf" id="zYR-8q-J09"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

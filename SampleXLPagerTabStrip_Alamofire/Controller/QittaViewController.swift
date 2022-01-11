@@ -66,6 +66,7 @@ extension QittaViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = articles[indexPath.row].title
         cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.textColor = .black
         
         return cell
     }

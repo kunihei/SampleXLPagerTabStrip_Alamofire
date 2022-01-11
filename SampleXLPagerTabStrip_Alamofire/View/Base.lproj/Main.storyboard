@@ -37,7 +37,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3PY-aE-8FY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FjF-ec-6b7"/>
                             <constraint firstItem="dBY-us-HOp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JI2-O0-fcz"/>
